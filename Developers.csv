@@ -1,0 +1,3 @@
+id,firstName,lastName,Specialty,Skills,status
+1,Ivan,Ivanov,QA,java,cpp,python,DELETED1,Ivan,Ivanov,QA,java,cpp,python,DELETED1,Ivan,Ivanov,QA,java,cpp,python,DELETED1,Ivan,Ivanov,QA,java,cpp,python,ACTIVE1,Ivan,Ivanov,web,java,cpp,python,ACTIVE
+2,Piter,Petrov,desktop,cpp,c#,DELETED2,Piter,Petrov,desktop,cpp,c#,DELETED2,Piter,Petrov,desktop,cpp,c#,ACTIVE
