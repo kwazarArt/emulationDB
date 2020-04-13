@@ -8,9 +8,10 @@ import com.kwazarart.app.model.Status;
 import java.util.ArrayList;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 public class SpecialtyRepository implements Loader<Specialty>, Repository {
-
+    Logger log = Logger.getLogger(DeveloperRepository.class.getName());
     private static final String PATH = "C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\java\\com\\kwazarart\\app\\resources\\Specialties.csv";
 
     List<Specialty> listSpecialty = loadList(Reader.read(getPath()));

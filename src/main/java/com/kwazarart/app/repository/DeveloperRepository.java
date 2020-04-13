@@ -7,9 +7,25 @@ import com.kwazarart.app.model.Skill;
 import com.kwazarart.app.model.Specialty;
 import com.kwazarart.app.model.Status;
 
+import java.io.IOException;
 import java.util.*;
+import java.util.logging.FileHandler;
+
+import java.util.logging.SimpleFormatter;
 
 public class DeveloperRepository implements Loader<Developer>, Repository {
+    SimpleFormatter formatter = new SimpleFormatter();
+    FileHandler fh;
+
+    {
+        try {
+            fh = new FileHandler("C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\java\\com\\kwazarart\\app\\resources\\log_test.txt");
+            fh.setFormatter(formatter);
+            log.addHandler(fh);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     private static final String PATH = "C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\java\\com\\kwazarart\\app\\resources\\Developers.csv";
 
@@ -20,7 +36,6 @@ public class DeveloperRepository implements Loader<Developer>, Repository {
 
 
     public String getPath() {
-        logging("getPath");
         return PATH;
     }
 
