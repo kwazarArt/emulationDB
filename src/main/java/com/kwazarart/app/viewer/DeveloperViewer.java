@@ -1,8 +1,9 @@
-package com.kwazarart.app.viewer;
+package main.java.com.kwazarart.app.viewer;
 
-import com.kwazarart.app.controller.DeveloperController;
-import com.kwazarart.app.inputoutput.InputByUser;
-import com.kwazarart.app.model.Developer;
+import main.java.com.kwazarart.app.controller.DeveloperController;
+
+import main.java.com.kwazarart.app.inputoutput.InputByUser;
+import main.java.com.kwazarart.app.model.Developer;
 
 import java.util.Scanner;
 

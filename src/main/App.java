@@ -1,6 +1,6 @@
-package com.kwazarart.app;
+package main;
 
-import com.kwazarart.app.viewer.MainMenu;
+import main.java.com.kwazarart.app.viewer.MainMenu;
 
 public class App {
     public static void main( String[] args ) {

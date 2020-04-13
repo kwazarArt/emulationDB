@@ -1,8 +1,8 @@
-package com.kwazarart.app.viewer;
+package main.java.com.kwazarart.app.viewer;
 
-import com.kwazarart.app.model.Developer;
-import com.kwazarart.app.model.Skill;
-import com.kwazarart.app.model.Specialty;
+import main.java.com.kwazarart.app.model.Developer;
+import main.java.com.kwazarart.app.model.Skill;
+import main.java.com.kwazarart.app.model.Specialty;
 
 import java.util.Scanner;
 

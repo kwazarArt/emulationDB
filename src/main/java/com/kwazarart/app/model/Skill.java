@@ -1,4 +1,4 @@
-package com.kwazarart.app.model;
+package main.java.com.kwazarart.app.model;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.kwazarart.app.repository;
+package main.java.com.kwazarart.app.repository;
 
 import java.util.List;
 

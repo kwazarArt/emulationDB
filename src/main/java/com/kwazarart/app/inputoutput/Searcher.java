@@ -1,7 +1,6 @@
-package com.kwazarart.app.inputoutput;
+package main.java.com.kwazarart.app.inputoutput;
 
-
-import com.kwazarart.app.model.Skill;
+import main.java.com.kwazarart.app.model.Skill;
 
 import java.util.List;
 

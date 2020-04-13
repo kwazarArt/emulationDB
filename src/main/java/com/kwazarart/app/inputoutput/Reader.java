@@ -1,4 +1,4 @@
-package com.kwazarart.app.inputoutput;
+package main.java.com.kwazarart.app.inputoutput;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,11 +1,10 @@
-package com.kwazarart.app.repository;
+package main.java.com.kwazarart.app.repository;
 
-
-import com.kwazarart.app.inputoutput.*;
-import com.kwazarart.app.model.Developer;
-import com.kwazarart.app.model.Skill;
-import com.kwazarart.app.model.Specialty;
-import com.kwazarart.app.model.Status;
+import main.java.com.kwazarart.app.inputoutput.*;
+import main.java.com.kwazarart.app.model.Developer;
+import main.java.com.kwazarart.app.model.Skill;
+import main.java.com.kwazarart.app.model.Specialty;
+import main.java.com.kwazarart.app.model.Status;
 
 import java.io.IOException;
 import java.util.*;
@@ -19,7 +18,7 @@ public class DeveloperRepository implements Loader<Developer>, Repository {
 
     {
         try {
-            fh = new FileHandler("C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\java\\com\\kwazarart\\app\\resources\\log_test.txt");
+            fh = new FileHandler("C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\resources\\log_test.txt");
             fh.setFormatter(formatter);
             log.addHandler(fh);
         } catch (IOException e) {
@@ -27,7 +26,7 @@ public class DeveloperRepository implements Loader<Developer>, Repository {
         }
     }
 
-    private static final String PATH = "C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\java\\com\\kwazarart\\app\\resources\\Developers.csv";
+    private static final String PATH = "C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\resources\\Developers.csv";
 
     SkillRepository skillRepository = new SkillRepository();
     SpecialtyRepository specialtyRepository = new SpecialtyRepository();

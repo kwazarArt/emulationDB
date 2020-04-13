@@ -1,7 +1,7 @@
-package com.kwazarart.app.controller;
+package main.java.com.kwazarart.app.controller;
 
-import com.kwazarart.app.repository.DeveloperRepository;
-import com.kwazarart.app.model.Developer;
+import main.java.com.kwazarart.app.model.Developer;
+import main.java.com.kwazarart.app.repository.DeveloperRepository;
 
 public class DeveloperController implements Controller {
     DeveloperRepository developerRepository = new DeveloperRepository();

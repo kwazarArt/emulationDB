@@ -1,7 +1,7 @@
-package com.kwazarart.app.controller;
+package main.java.com.kwazarart.app.controller;
 
-import com.kwazarart.app.repository.SkillRepository;
-import com.kwazarart.app.model.Skill;
+import main.java.com.kwazarart.app.model.Skill;
+import main.java.com.kwazarart.app.repository.SkillRepository;
 
 public class SkillController implements Controller{
     SkillRepository skillRepository = new SkillRepository();

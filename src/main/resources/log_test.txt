@@ -7,7 +7,7 @@ INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyReposit
 апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
 INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called loadList() method
 апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.DeveloperRepository called loadList() method
+INFO: Mon Apr 13 18:57:35 MSK 2020 main.java.com.kwazarart.app.repository.DeveloperRepository called loadList() method
 апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
 INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called getPath() method
 апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging

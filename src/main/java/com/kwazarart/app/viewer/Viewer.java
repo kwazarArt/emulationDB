@@ -1,4 +1,4 @@
-package com.kwazarart.app.viewer;
+package main.java.com.kwazarart.app.viewer;
 
 import java.util.Scanner;
 

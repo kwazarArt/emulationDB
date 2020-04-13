@@ -1,9 +1,8 @@
-package com.kwazarart.app.viewer;
+package main.java.com.kwazarart.app.viewer;
 
-import com.kwazarart.app.controller.SkillController;
-import com.kwazarart.app.inputoutput.InputByUser;
-import com.kwazarart.app.model.Skill;
-
+import main.java.com.kwazarart.app.controller.SkillController;
+import main.java.com.kwazarart.app.inputoutput.InputByUser;
+import main.java.com.kwazarart.app.model.Skill;
 
 import java.util.Scanner;
 

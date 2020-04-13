@@ -1,4 +1,4 @@
-package com.kwazarart.app.controller;
+package main.java.com.kwazarart.app.controller;
 
 public interface Controller {
 

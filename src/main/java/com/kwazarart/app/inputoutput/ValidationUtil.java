@@ -1,12 +1,12 @@
-package com.kwazarart.app.inputoutput;
+package main.java.com.kwazarart.app.inputoutput;
 
+import main.java.com.kwazarart.app.model.Developer;
+import main.java.com.kwazarart.app.model.Skill;
+import main.java.com.kwazarart.app.model.Specialty;
+import main.java.com.kwazarart.app.repository.DeveloperRepository;
+import main.java.com.kwazarart.app.repository.SkillRepository;
+import main.java.com.kwazarart.app.repository.SpecialtyRepository;
 
-import com.kwazarart.app.model.Developer;
-import com.kwazarart.app.model.Skill;
-import com.kwazarart.app.model.Specialty;
-import com.kwazarart.app.repository.DeveloperRepository;
-import com.kwazarart.app.repository.SkillRepository;
-import com.kwazarart.app.repository.SpecialtyRepository;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,8 @@
-package com.kwazarart.app.controller;
+package main.java.com.kwazarart.app.controller;
 
-import com.kwazarart.app.repository.SpecialtyRepository;
-import com.kwazarart.app.model.Specialty;
+
+import main.java.com.kwazarart.app.model.Specialty;
+import main.java.com.kwazarart.app.repository.SpecialtyRepository;
 
 public class SpecialtyController implements Controller {
     SpecialtyRepository specialtyRepository = new SpecialtyRepository();

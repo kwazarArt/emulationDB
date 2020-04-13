@@ -1,9 +1,8 @@
-package com.kwazarart.app.repository;
+package main.java.com.kwazarart.app.repository;
 
-
-import com.kwazarart.app.inputoutput.*;
-import com.kwazarart.app.model.Skill;
-import com.kwazarart.app.model.Status;
+import main.java.com.kwazarart.app.inputoutput.*;
+import main.java.com.kwazarart.app.model.Skill;
+import main.java.com.kwazarart.app.model.Status;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +11,7 @@ import java.util.logging.Logger;
 
 public class SkillRepository implements Loader<Skill>, Repository {
     Logger log = Logger.getLogger(DeveloperRepository.class.getName());
-    private static final String PATH = "C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\java\\com\\kwazarart\\app\\resources\\Skills.csv";
+    private static final String PATH = "C:\\Users\\user\\Desktop\\emulationdb\\src\\main\\resources\\Skills.csv";
     private List<Skill> listSkill  = loadList(Reader.read(getPath()));
 
 
