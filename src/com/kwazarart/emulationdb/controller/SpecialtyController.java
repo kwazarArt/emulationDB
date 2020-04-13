@@ -2,35 +2,34 @@ package com.kwazarart.emulationdb.controller;
 
 import com.kwazarart.emulationdb.model.Specialty;
 import com.kwazarart.emulationdb.repository.SpecialtyRepository;
-import com.kwazarart.emulationdb.viewer.SpecialtyViewer;
 
 public class SpecialtyController implements Controller {
     SpecialtyRepository specialtyRepository = new SpecialtyRepository();
-    SpecialtyViewer viewer = new SpecialtyViewer();
+
 
     @Override
     public void create() {
         specialtyRepository.add();
     }
 
+
     @Override
-    public void read() {
-        Specialty specialty = specialtyRepository.get();
+    public void read(int id) {
+        Specialty specialty = specialtyRepository.get(id);
         if (specialty == null) {
-            viewer.notFound();
+            specialtyRepository.notFound();
         } else {
-            viewer.printByIndex(specialty);
+            specialtyRepository.printByIndex(specialty);
         }
     }
 
     @Override
     public void readAll() {
-        viewer.printAll(specialtyRepository.getAll());
+        specialtyRepository.printAll(specialtyRepository.getAll());
     }
 
     @Override
-    public void update() {
-        int var = viewer.viewUpdate();
+    public void update(int var) {
         if (var == 0) return;
         specialtyRepository.updater(var);
     }

@@ -2,12 +2,9 @@ package com.kwazarart.emulationdb.controller;
 
 import com.kwazarart.emulationdb.model.Skill;
 import com.kwazarart.emulationdb.repository.SkillRepository;
-import com.kwazarart.emulationdb.viewer.SkillViewer;
-import com.kwazarart.emulationdb.viewer.Viewer;
 
 public class SkillController implements Controller{
     SkillRepository skillRepository = new SkillRepository();
-    Viewer<Skill> viewer = new SkillViewer();
 
     @Override
     public void create() {
@@ -15,23 +12,22 @@ public class SkillController implements Controller{
     }
 
     @Override
-    public void read() {
-        Skill skill = skillRepository.get();
+    public void read(int id) {
+        Skill skill = skillRepository.get(id);
         if (skill == null) {
-            viewer.notFound();
+            skillRepository.notFound();
         } else {
-            viewer.printByIndex(skill);
+            skillRepository.printByIndex(skill);
         }
     }
 
     @Override
     public void readAll() {
-        viewer.printAll(skillRepository.getAll());
+        skillRepository.printAll(skillRepository.getAll());
     }
 
     @Override
-    public void update() {
-        int var = viewer.viewUpdate();
+    public void update(int var) {
         if (var == 0) return;
         skillRepository.updater(var);
     }

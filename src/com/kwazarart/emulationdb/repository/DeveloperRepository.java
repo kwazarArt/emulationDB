@@ -12,8 +12,9 @@ import java.util.Scanner;
 
 import static com.kwazarart.emulationdb.inputoutput.Searcher.searchByIndex;
 
-public class DeveloperRepository implements Loader<Developer>, CommonCrud {
+public class DeveloperRepository implements Loader<Developer>, Repository {
     private static final String PATH = "src/com/kwazarart/emulationdb/resources/Developers.csv";
+
     SkillRepository skillRepository = new SkillRepository();
     SpecialtyRepository specialtyRepository = new SpecialtyRepository();
 
@@ -65,12 +66,12 @@ public class DeveloperRepository implements Loader<Developer>, CommonCrud {
     }
 
     @Override
-    public Developer get() {
-        int id = InputByUser.inputInt();
-        if (id <= 0) return null;
+    public Developer get(int id) {
         String line = searchByIndex(PATH, id);
         return stringToDeveloper(line);
     }
+
+
 
     @Override
     public List<Developer> getAll() {

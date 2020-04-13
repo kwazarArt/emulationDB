@@ -1,31 +1,47 @@
 package com.kwazarart.emulationdb.viewer;
 
+import com.kwazarart.emulationdb.controller.DeveloperController;
+import com.kwazarart.emulationdb.inputoutput.InputByUser;
 import com.kwazarart.emulationdb.model.Developer;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class DeveloperViewer implements Viewer<Developer> {
+    DeveloperController developerController = new DeveloperController();
+    public static DeveloperViewer developerViewer;
 
-    @Override
-    public void printByIndex(Developer developer) {
-        System.out.println(developer);
-    }
+    private DeveloperViewer(){}
 
-    @Override
-    public void printAll(List<Developer> list) {
-        for(Developer developer : list) {
-            System.out.println(developer);
+    public static DeveloperViewer getSpecialtyViewer () {
+        if (developerViewer == null) {
+            developerViewer = new DeveloperViewer();
         }
-        System.out.println("\n");
+        return developerViewer;
     }
 
     @Override
-    public void notFound() {
-        System.out.println("Skill doesn't found");
+    public void veiwAdd() {
+        developerController.create();
     }
 
-    public int viewUpdate() {
+    @Override
+    public void viewGet() {
+        int id = InputByUser.inputInt();
+        if (id <= 0) return;
+        developerController.read(id);
+    }
+
+    @Override
+    public void viewGetAll() {
+        developerController.readAll();
+    }
+
+    @Override
+    public void viewDelete() {
+        developerController.delete();
+    }
+
+    public void viewUpdate() {
         System.out.println("What do you need to change?");
         String variant;
         while (true) {
@@ -38,19 +54,25 @@ public class DeveloperViewer implements Viewer<Developer> {
             System.out.print("Enter variant: ");
             Scanner sc = new Scanner(System.in);
             variant = sc.nextLine();
-            if (variant.equals("0")) return 0;
-            if (variant.equals("1")) {
-                return 1;
-            } else if (variant.equals("2")) {
-                return 2;
-            } else if (variant.equals("3")) {
-                return 3;
-            } else if (variant.equals("4")) {
-                return 4;
-            } else if (variant.equals("5")) {
-                return 5;
-            } else {
-                System.out.println("\nWrong choice. Try again.\n");
+            if (variant.equals("0")) return;
+            switch (variant) {
+                case "1":
+                    developerController.update(1);
+                    break;
+                case "2":
+                    developerController.update(2);
+                    break;
+                case "3":
+                    developerController.update(3);
+                    break;
+                case "4":
+                    developerController.update(4);
+                    break;
+                case "5":
+                    developerController.update(5);
+                    break;
+                default:
+                    System.out.println("\nWrong choice. Try again.\n");
             }
         }
     }

@@ -1,32 +1,51 @@
 package com.kwazarart.emulationdb.viewer;
 
+import com.kwazarart.emulationdb.controller.SkillController;
+import com.kwazarart.emulationdb.inputoutput.InputByUser;
 import com.kwazarart.emulationdb.model.Skill;
 
-import java.util.List;
 import java.util.Scanner;
+
 
 public class SkillViewer implements Viewer<Skill> {
 
-    @Override
-    public void printByIndex(Skill skill) {
-        System.out.println(skill);
-    }
+    public static SkillViewer skillViewer;
+    SkillController skillController = new SkillController();
 
-    @Override
-    public void printAll(List<Skill> list) {
-        for (Skill skill : list) {
-            System.out.println(skill);
+    private SkillViewer(){}
+
+    public static SkillViewer getSkillViewer () {
+        if (skillViewer == null) {
+            skillViewer = new SkillViewer();
         }
-        System.out.println("\n");
+        return skillViewer;
     }
 
     @Override
-    public void notFound() {
-        System.out.println("Skill doesn't found");
+    public void veiwAdd() {
+        System.out.print("Enter skill name: ");
+        skillController.create();
     }
 
     @Override
-    public int viewUpdate() {
+    public void viewGet() {
+        int id = InputByUser.inputInt();
+        if (id <= 0) return;
+        skillController.read(id);
+    }
+
+    @Override
+    public void viewGetAll() {
+        skillController.readAll();
+    }
+
+    @Override
+    public void viewDelete() {
+        skillController.delete();
+    }
+
+    @Override
+    public void viewUpdate() {
         System.out.println("What do you need to change?");
         String variant;
         while (true) {
@@ -36,16 +55,10 @@ public class SkillViewer implements Viewer<Skill> {
             System.out.print("Enter variant: ");
             Scanner sc = new Scanner(System.in);
             variant = sc.nextLine();
-            if (variant.equals("0")) return 0;
-            if (variant.equals("1")) {
-                return 1;
-            } else if (variant.equals("2")) {
-                return 2;
-            } else {
-                System.out.println("\nWrong choice. Try again.\n");
-            }
+            if (variant.equals("0")) { return; }
+            if (variant.equals("1")) { skillController.update(1);}
+            else if (variant.equals("2")) { skillController.update(2);}
+            else { System.out.println("\nWrong choice. Try again.\n"); }
         }
     }
-
-
 }

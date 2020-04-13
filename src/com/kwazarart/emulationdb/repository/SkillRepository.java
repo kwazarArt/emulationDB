@@ -9,7 +9,7 @@ import java.util.List;
 
 import static com.kwazarart.emulationdb.inputoutput.Searcher.searchByIndex;
 
-public class SkillRepository implements Loader<Skill>, CommonCrud {
+public class SkillRepository implements Loader<Skill>, Repository {
     private static final String PATH = "src/com/kwazarart/emulationdb/resources/Skills.csv";
     private List<Skill> listSkill = listSkill = loadList(Reader.read(getPath()));
 
@@ -37,7 +37,6 @@ public class SkillRepository implements Loader<Skill>, CommonCrud {
 
     @Override
     public Skill add() {
-        System.out.print("Enter skill name: ");
         Skill skill;
         skill = new Skill(
                 Searcher.searchMaxIndex(PATH) + 1,
@@ -52,9 +51,7 @@ public class SkillRepository implements Loader<Skill>, CommonCrud {
     }
 
     @Override
-    public Skill get() {
-        int id = InputByUser.inputInt();
-        if (id <= 0) return null;
+    public Skill get(int id) {
         String line = searchByIndex(PATH, id);
         return stringToSkill(line);
     }

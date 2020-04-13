@@ -1,9 +1,17 @@
 package com.kwazarart.emulationdb.viewer;
 
+import com.kwazarart.emulationdb.model.Developer;
+import com.kwazarart.emulationdb.model.Skill;
+import com.kwazarart.emulationdb.model.Specialty;
+
 import java.util.Scanner;
 
 public class MainMenu {
-    public static int viewMainMenu() {
+    public static void viewMainMenu() {
+        Viewer<Skill> viewerSkill = SkillViewer.getSkillViewer();
+        Viewer<Specialty> viewerSpecialty = SpecialtyViewer.getSpecialtyViewer();
+        Viewer<Developer> viewerDeveloper = DeveloperViewer.getSpecialtyViewer();
+
         String select;
         int x;
         Scanner scanner = new Scanner(System.in);
@@ -15,14 +23,21 @@ public class MainMenu {
             System.out.println("\t0 - Exit");
             System.out.println("Select variant:");
             select = scanner.nextLine();
-            if (select.equals("0")) return 0;
-            if (select.equals("1") || select.equals("2") || select.equals("3")) {
-                x = Integer.parseInt(select);
-                break;
-            } else {
-                System.out.println("Wrong variant. Try again.\n\n");
+            if (select.equals("0")) return;
+            switch (select) {
+                case "1":
+                    viewerDeveloper.viewInnerMenu();
+                    break;
+                case "2":
+                    viewerSkill.viewInnerMenu();
+                    break;
+                case "3":
+                    viewerSpecialty.viewInnerMenu();
+                    break;
+                default:
+                    System.out.println("Wrong variant. Try again.\n\n");
+                    break;
             }
         }
-        return x;
     }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 
 import static com.kwazarart.emulationdb.inputoutput.Searcher.searchByIndex;
 
-public class SpecialtyRepository implements Loader<Specialty>, CommonCrud {
+public class SpecialtyRepository implements Loader<Specialty>, Repository {
     private static final String PATH = "src/com/kwazarart/emulationdb/resources/Specialties.csv";
 
     List<Specialty> listSpecialty = loadList(Reader.read(getPath()));
@@ -53,9 +53,7 @@ public class SpecialtyRepository implements Loader<Specialty>, CommonCrud {
     }
 
     @Override
-    public Specialty get() {
-        int id = InputByUser.inputInt();
-        if (id <= 0) return null;
+    public Specialty get(int id) {
         String line = searchByIndex(PATH, id);
         return stringToSpecialty(line);
     }

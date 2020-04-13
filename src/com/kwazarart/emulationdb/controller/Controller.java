@@ -1,40 +1,14 @@
 package com.kwazarart.emulationdb.controller;
 
-import com.kwazarart.emulationdb.viewer.InnerMenu;
-
 public interface Controller {
-    default void controlMenu() {
-        while (true) {
-            int variant = InnerMenu.viewInnerMenu();
-            switch (variant) {
-                case 1:
-                    create();
-                    break;
-                case 2:
-                    read();
-                    break;
-                case 3:
-                    readAll();
-                    break;
-                case 4:
-                    update();
-                    break;
-                case 5:
-                    delete();
-                    break;
-                case 0:
-                    return;
-            }
-        }
-    }
 
     void create();
 
-    void read();
+    void read(int x);
 
     void readAll();
 
-    void update();
+    void update(int x);
 
     void delete();
 }
