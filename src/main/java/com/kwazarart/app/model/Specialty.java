@@ -1,28 +1,17 @@
 package main.java.com.kwazarart.app.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@AllArgsConstructor
+@Data
+@EqualsAndHashCode
 public class Specialty {
 
     private int id;
     private String name;
     private Status status;
-
-    public Specialty(int id, String name, Status status) {
-        this.id = id;
-        this.name = name;
-        this.status = status;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
 
     @Override
     public String toString() {

@@ -7,12 +7,10 @@ import main.java.com.kwazarart.app.repository.SpecialtyRepository;
 public class SpecialtyController implements Controller {
     SpecialtyRepository specialtyRepository = new SpecialtyRepository();
 
-
     @Override
     public void create() {
         specialtyRepository.add();
     }
-
 
     @Override
     public void read(int id) {

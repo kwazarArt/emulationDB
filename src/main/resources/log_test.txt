@@ -1,38 +1,62 @@
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called getPath() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called loadList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called getPath() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called loadList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 main.java.com.kwazarart.app.repository.DeveloperRepository called loadList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called getPath() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called loadList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called getList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called getPath() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called loadList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called getListSpecialty() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called getPath() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called loadList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SkillRepository called getList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called getPath() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called loadList() method
-апр. 13, 2020 6:57:35 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:35 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called getListSpecialty() method
-апр. 13, 2020 6:57:47 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:47 MSK 2020 com.kwazarart.app.repository.SkillRepository called getAll() method
-апр. 13, 2020 6:57:53 PM com.kwazarart.app.repository.Repository logging
-INFO: Mon Apr 13 18:57:53 MSK 2020 com.kwazarart.app.repository.SpecialtyRepository called getAll() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getPath() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called loadList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getPath() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called loadList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.DeveloperRepository called loadList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getPath() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called loadList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getPath() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called loadList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getListSpecialty() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getPath() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called loadList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getPath() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called loadList() method
+апр. 15, 2020 1:53:13 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:13 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getListSpecialty() method
+апр. 15, 2020 1:53:23 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:23 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getAll() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.DeveloperRepository called getAll() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getPath() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called loadList() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getList() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getPath() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called loadList() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getListSpecialty() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getPath() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called loadList() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SkillRepository called getList() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getPath() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called loadList() method
+апр. 15, 2020 1:53:29 AM main.java.com.kwazarart.app.repository.Repository logging
+INFO: Wed Apr 15 01:53:29 MSK 2020 main.java.com.kwazarart.app.repository.SpecialtyRepository called getListSpecialty() method

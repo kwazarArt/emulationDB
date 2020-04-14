@@ -6,7 +6,6 @@ import main.java.com.kwazarart.app.repository.DeveloperRepository;
 public class DeveloperController implements Controller {
     DeveloperRepository developerRepository = new DeveloperRepository();
 
-
     @Override
     public void create() {
         developerRepository.add();
